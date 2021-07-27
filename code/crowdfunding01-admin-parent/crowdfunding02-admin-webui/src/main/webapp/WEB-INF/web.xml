@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- 使用一个 IOC 容器，防止后面的 SpringSecurity 的 DelegatingFilterProxy
+     寻找 webApplicationContext IOC 容器出错 -->
+<!--    &lt;!&ndash; needed for ContextLoaderListener &ndash;&gt;
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring-persist-*.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>-->
+    
+    <filter>
+        <filter-name>characterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <!-- 指定字符集 -->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <!-- 强制请求设置字符集 -->
+        <init-param>
+            <param-name>forceRequestEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <!-- 强制相应设置字符集 -->
+        <init-param>
+            <param-name>forceResponseEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <!-- 这个 Filter 执行的顺序要在所有其他 Filter 的前面 -->
+    <!-- 原因如下： -->
+    <!-- request.setCharacterEncoding(encoding) 必须在request.getParameter() 前面-->
+    <!-- response.setCharacterEncoding(encoding) 必须在response.getWriter() 前面-->
+    <filter-mapping>
+        <filter-name>characterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- DispatcherServlet -->
+    <servlet>
+        <servlet-name>springDispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spring*.xml</param-value>
+        </init-param>
+        <!-- Servlet 默认生命周期中，创建对象是在第一次接受到请求时 -->
+        <!-- 而 DispatcherServlet 创建对象后有大量的”框架初始化“工作，不适合在第一次请求时来做 -->
+        <!-- 设置 load-on-startup 就是为了让 DispatcherServlet 在 web 应用启动时创建对象、初始化 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>springDispatcherServlet</servlet-name>
+        <!-- url-pattern 配置方式一：/ 表示拦截所有请求 -->
+        <!--<url-pattern>/</url-pattern>-->
+        <!-- url-pattern 配置方式二：配置请求扩展名 -->
+        <!-- 优点1：xxx.css、xxx.js、xxx.png 等等静态资源完全不经过 SpringMVC，不需要特殊处理 -->
+        <!-- 优点2：可以实现伪静态效果。表面上看起来是访问一个 HTML 文件这样的静态资源，但实际上是经过 Java 代码的结果 -->
+        <!--    伪静态作用1：给黑客入侵增加难度-->
+        <!--    伪静态作用2：有利于 SEO 优化（让百度、谷歌这样的搜索引擎更容易找到我们的项目 -->
+        <!-- 缺点：不符合 RESTFul 风格 -->
+        <url-pattern>*.html</url-pattern>
+        <!-- 为什么要另外再配置 json 扩展名 -->
+        <!-- 如果一个 Ajax 请求扩展名是 html，但是实际服务器给浏览器返回的是 json 数据，而这就不匹配了，会出现 406 错误 -->
+        <url-pattern>*.json</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

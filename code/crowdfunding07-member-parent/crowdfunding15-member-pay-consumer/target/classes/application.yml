@@ -1,0 +1,38 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: mao-crowd-pay
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    # 关闭缓存
+    cache: false
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  # SpringSession 配置
+  session:
+    store-type: redis
+# eureka 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+# alipay 相关参数
+ali:
+  pay:
+    alipay-public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqkA4l7PGdzKtpA02dFOEAOEXxxnqyIP4s+bo3k/UZFZ4rsrD23Dk7+/KCzZqbdGzQXneJw74EDmaqH5+Vg7GkUd2dgLMAQ+JrwQPf49FOitBGqpEOTFeANprzQ8CBRfknjyb4KFyQ+d9LbmkydlrfvpGLutIHG9C0pP+W5wLEuaP/2u+w3mcF/bwYVeysU9NF0aY76sYtUEouP2d1U+f1kPxOKLvG2UzQ0qaOyhgXM1Hx7leXwMjSobwCW/AaPhDwmAxSLjoOIUof+uO6jmPbmSv3DXF6BHk7oh0B9KQKqYN47S11AIliCcCYT3n9n6uhhTFV/broAaa7QiS6Fh9EwIDAQAB
+    app-id: 2021000117695051
+    charset: utf-8
+    gateway-url: https://openapi.alipaydev.com/gateway.do
+    merchant-private-key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCRnyW4a/WtAQk08h0RZ+4yjaAa0cz+chHuQ2B4yXL6R8N1dE0EytpYYLikhhjutrO21Jm/471FW9xTetHGD5cW26T/B2ED4DVF67NAfJHxwGc79XpL/jSZBhCx1W9qOA8zzMkAfpD0m1IgbhYZqRSP0iVqqZPh4sNJp1Z4fqKMG/FtT2xBgCUdjh1m8DL5wHN++eWRYiOJb/wWKWkG3hLMOrUWVnJhOcuqwGvjjQ91Tc4YbD052891TSj/hs0kw7QSXWdwXyXkHCPxycJHZAge2RmXDD7rdAg9tcVFrlqBF6SYZ9BIIGrqNNIYZAYxqTBJr35nacU4Nat4T/H63Qn3AgMBAAECggEBAIk3R1niENt2UHCde5p9Lkxge28KJnnUjuTOhEcMu9TublVsw24yn1ALw7Dz0uaNLganikDwndaPWqsm3igdZKdbTLwq/dWjHU/Ha17mgrckL6KmCxk0beeLeYu4rIWQUXLkErruiDSVbuu0EAsZ8ZAb2roJFJoTDSWIEsjzusL92+xvkNwzJVkxScekvI5z5jBzx9IIRqkP2MJSaatIz063DYegQNJ4KIth5jHCO4UtU4ltWw3IH/Pns8+0m9TpuTacwPauIgLiaD1gRqGrfgP49Qqj4Q7wzjNG9czuaKbyyHS4wqBgYpxyvZnQvxnhVwRgXpZFmhholcL6ssn3VxECgYEA1Wh0wkaBoOhyF5yrcJLJjVk/x7PN1oMCnmh1scz0ebupfrgCjG0tlIk9V0/lsM1bL7H8Hv6z4kuT9D+dZYzm+R+o53fZL1ZcV763HJyMh6lBDlsQ2yeoQ/rvB7m5cmPw7wY/F38nk4Q4ZuvhrbbETCocpeM8nVOsSOGsN5Z3dgUCgYEArq9RhJB2r/+4qOLTA83+jIVHzL1AoClMAPwhMIpy6ywM3vy6OTMpqSAPLKv2C7DbZI8tES0n61J/9Ujo6tuRbEYUQQL3IcDxtF9HMfm60x05jk7KVVXM47VHKbYGLbG8YVH7Y7kuje/gK8/hkEJQlCRAlDAWs8+ZYs5JXanO5MsCgYBhAVBBlwcJe1+ROBf93dtcMvt47VRdc8PW+ai2H3Hpe9I51a7i4iXb5N5LN/gye8Y9UexGsoRWEwC3/8quBHRhPXDrdmD00Y68G+bkTIzchaUav25UEBy+eev5WQTg6Gj2XaKELbpxpaJ1tjcpXXCxJltLVJWS9hvULTC5O94leQKBgDkezvMgIg9O+V0QPpwB4filJGNIhzdYCahQybGLtCQ+VT8dOO+3USoid5PN7zjHbhYl00DImUMTyQ+19aPGhHj5OWpAw/rfkqm+dhNba8HYzpdAIF1jHwpenpR/FuoeMlFIc4GabiSviYgKA+IeLScj65IJX4MQoUFz3v2npyWdAoGAfZvNvC3Yasr2c3pMIpzE3HXqIbbJ4RpLHw2cjO1GYqQJiTFsuOT2697vB8LhdUd/h+AsiEd74BDkn0HbBM7cOtKesXMSJ2AM6H5xghh67BT2X2T5P5l+pfPcTeLbBHJFJJIs7I4rtfFIZx5Ge6bowrrEEeIrS/vMrjm/U/tQL+E=
+    notify-url: http://bim3fg.natappfree.cc/pay/notify
+    return-url: http://www.crowd.com/pay/return
+    sign-type: RSA2

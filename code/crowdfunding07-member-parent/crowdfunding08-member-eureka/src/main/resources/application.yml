@@ -1,0 +1,17 @@
+server:
+  port: 1000
+
+# 工程名字
+spring:
+  application:
+    name: mao-crowd-eureka
+
+# eureka 配置
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}/${server.port}/eureka/

@@ -1,0 +1,13 @@
+server:
+  port: 4000
+
+# 项目名称
+spring:
+  application:
+    name: mao-server-consumer
+
+# eureka  客户端配置
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:5000/eureka/

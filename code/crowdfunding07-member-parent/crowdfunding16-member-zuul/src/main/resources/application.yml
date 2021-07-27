@@ -1,0 +1,49 @@
+server:
+  port: 80
+
+# 项目名称
+spring:
+  application:
+    name: mao-crowd-zuul
+#   redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#   SpringSession 配置
+  session:
+    store-type: redis
+
+# eureka 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+# zuul 配置
+zuul:
+
+  ignored-services: '*'
+#   在 Zuul 向其他微服务重定向时，保持原本的头信息（请求头、响应头）
+  sensitive-headers:
+#   指定网关路由
+  routes:
+    crowd-portal:
+#       对应application-name
+      service-id: mao-crowd-auth
+#       表示直接通过根路径访问，必须加上**，否则多层路径无法访问
+      path: /**
+    crowd-project:
+      service-id: mao-crowd-project
+      path: /project/**
+    crowd-order:
+      service-id: mao-crowd-order
+      path: /order/**
+    crowd-pay:
+      service-id: mao-crowd-pay
+      path: /pay/**
+#  此处解决后端服务重定向导致用户浏览的 host 变成后端服务的 host 的问题
+  add-host-header: true
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

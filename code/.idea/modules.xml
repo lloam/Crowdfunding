@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/crowdfunding.iml" filepath="$PROJECT_DIR$/.idea/crowdfunding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding01-admin-parent.iml" filepath="$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding01-admin-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding02-admin-webui/crowdfunding02-admin-webui.iml" filepath="$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding02-admin-webui/crowdfunding02-admin-webui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding03-admin-component/crowdfunding03-admin-component.iml" filepath="$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding03-admin-component/crowdfunding03-admin-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding04-admin-entity/crowdfunding04-admin-entity.iml" filepath="$PROJECT_DIR$/crowdfunding01-admin-parent/crowdfunding04-admin-entity/crowdfunding04-admin-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding05-common-util/crowdfunding05-common-util.iml" filepath="$PROJECT_DIR$/crowdfunding05-common-util/crowdfunding05-common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding06-common-reverse/crowdfunding06-common-reverse.iml" filepath="$PROJECT_DIR$/crowdfunding06-common-reverse/crowdfunding06-common-reverse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding07-member-parent.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding07-member-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding08-member-eureka/crowdfunding08-member-eureka.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding08-member-eureka/crowdfunding08-member-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding09-member-entity/crowdfunding09-member-entity.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding09-member-entity/crowdfunding09-member-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding10-member-mysql-provider/crowdfunding10-member-mysql-provider.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding10-member-mysql-provider/crowdfunding10-member-mysql-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding11-member-redis-provider/crowdfunding11-member-redis-provider.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding11-member-redis-provider/crowdfunding11-member-redis-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding12-member-authentication-consumer/crowdfunding12-member-authentication-consumer.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding12-member-authentication-consumer/crowdfunding12-member-authentication-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding13-member-project-consumer/crowdfunding13-member-project-consumer.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding13-member-project-consumer/crowdfunding13-member-project-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding14-member-order-consumer/crowdfunding14-member-order-consumer.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding14-member-order-consumer/crowdfunding14-member-order-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding15-member-pay-consumer/crowdfunding15-member-pay-consumer.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding15-member-pay-consumer/crowdfunding15-member-pay-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding16-member-zuul/crowdfunding16-member-zuul.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding16-member-zuul/crowdfunding16-member-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding17-member-api/crowdfunding17-member-api.iml" filepath="$PROJECT_DIR$/crowdfunding07-member-parent/crowdfunding17-member-api/crowdfunding17-member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro04-spring-annotation/pro04-spring-annotation.iml" filepath="$PROJECT_DIR$/pro04-spring-annotation/pro04-spring-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro05-spring-security/pro05-spring-security.iml" filepath="$PROJECT_DIR$/pro05-spring-security/pro05-spring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro06-spring-cloud-parent.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro06-spring-cloud-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro07-spring-cloud-common/pro07-spring-cloud-common.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro07-spring-cloud-common/pro07-spring-cloud-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro08-spring-cloud-provider/pro08-spring-cloud-provider.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro08-spring-cloud-provider/pro08-spring-cloud-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro09-spring-cloud-consumer/pro09-spring-cloud-consumer.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro09-spring-cloud-consumer/pro09-spring-cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro09-spring-cloud-feign-consumer/pro09-spring-cloud-feign-consumer.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro09-spring-cloud-feign-consumer/pro09-spring-cloud-feign-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro10-spring-cloud-eureka/pro10-spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro10-spring-cloud-eureka/pro10-spring-cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro11-spring-cloud-dashboard/pro11-spring-cloud-dashboard.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro11-spring-cloud-dashboard/pro11-spring-cloud-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro06-spring-cloud-parent/pro12-spring-cloud-zuul/pro12-spring-cloud-zuul.iml" filepath="$PROJECT_DIR$/pro06-spring-cloud-parent/pro12-spring-cloud-zuul/pro12-spring-cloud-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro13-short-message/pro13-short-message.iml" filepath="$PROJECT_DIR$/pro13-short-message/pro13-short-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro14-spring-session-a/pro14-spring-session-a.iml" filepath="$PROJECT_DIR$/pro14-spring-session-a/pro14-spring-session-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pro14-spring-session-b/pro14-spring-session-b.iml" filepath="$PROJECT_DIR$/pro14-spring-session-b/pro14-spring-session-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-maven-project/spring-boot-maven-project.iml" filepath="$PROJECT_DIR$/spring-boot-maven-project/spring-boot-maven-project.iml" />
+    </modules>
+  </component>
+</project>

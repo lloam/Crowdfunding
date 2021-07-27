@@ -1,0 +1,11 @@
+spring:
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  # springSession 配置，表示使用 redis 存储 session
+  session:
+    store-type: redis
+
+server:
+  port: 8081

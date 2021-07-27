@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="crowdfunding03-admin-component" />
+        <module name="crowdfunding09-member-entity" />
+        <module name="crowdfunding11-member-redis-provider" />
+        <module name="crowdfunding15-member-pay-consumer" />
+        <module name="crowdfunding14-member-order-consumer" />
+        <module name="crowdfunding17-member-api" />
+        <module name="crowdfunding06-common-reverse" />
+        <module name="pro09-spring-cloud-consumer" />
+        <module name="crowdfunding10-member-mysql-provider" />
+        <module name="crowdfunding08-member-eureka" />
+        <module name="pro04-spring-annotation" />
+        <module name="pro12-spring-cloud-zuul" />
+        <module name="pro13-short-message" />
+        <module name="crowdfunding12-member-authentication-consumer" />
+        <module name="crowdfunding04-admin-entity" />
+        <module name="pro14-spring-session-b" />
+        <module name="pro09-spring-cloud-feign-consumer" />
+        <module name="pro11-spring-cloud-dashboard" />
+        <module name="crowdfunding13-member-project-consumer" />
+        <module name="pro05-spring-security" />
+        <module name="pro14-spring-session-a" />
+        <module name="spring-boot-maven-project" />
+        <module name="pro08-spring-cloud-provider" />
+        <module name="crowdfunding05-common-util" />
+        <module name="pro07-spring-cloud-common" />
+        <module name="crowdfunding16-member-zuul" />
+        <module name="pro10-spring-cloud-eureka" />
+        <module name="crowdfunding02-admin-webui" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="13">
+      <module name="crowdfunding01-admin-parent" target="1.8" />
+      <module name="crowdfunding02-admin-webui" target="1.8" />
+      <module name="crowdfunding03-admin-component" target="1.8" />
+      <module name="crowdfunding04-admin-entity" target="1.8" />
+      <module name="crowdfunding05-common-util" target="1.8" />
+      <module name="crowdfunding06-common-reverse" target="1.8" />
+      <module name="crowdfunding07-member-parent" target="1.8" />
+      <module name="crowdfunding08-member-eureka" target="1.8" />
+      <module name="crowdfunding09-member-entity" target="1.8" />
+      <module name="crowdfunding10-member-mysql-provider" target="1.8" />
+      <module name="crowdfunding11-member-redis-provider" target="1.8" />
+      <module name="crowdfunding12-member-authentication-consumer" target="1.8" />
+      <module name="crowdfunding13-member-project-consumer" target="1.8" />
+      <module name="crowdfunding14-member-order-consumer" target="1.8" />
+      <module name="crowdfunding15-member-pay-consumer" target="1.8" />
+      <module name="crowdfunding16-member-zuul" target="1.8" />
+      <module name="crowdfunding17-member-api" target="1.8" />
+      <module name="pro04-spring-annotation" target="1.8" />
+      <module name="pro05-spring-security" target="1.8" />
+      <module name="pro06-spring-cloud-parent" target="1.8" />
+      <module name="pro07-spring-cloud-common" target="1.8" />
+      <module name="pro08-spring-cloud-provider" target="1.8" />
+      <module name="pro09-spring-cloud-consumer" target="1.8" />
+      <module name="pro09-spring-cloud-feign-consumer" target="1.8" />
+      <module name="pro10-spring-cloud-eureka" target="1.8" />
+      <module name="pro11-spring-cloud-dashboard" target="1.8" />
+      <module name="pro12-spring-cloud-zuul" target="1.8" />
+      <module name="pro13-short-message" target="1.8" />
+      <module name="pro14-spring-session-a" target="1.8" />
+      <module name="pro14-spring-session-b" target="1.8" />
+      <module name="spring-boot-maven-project" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pro06-spring-cloud-parent" options="" />
+      <module name="pro07-spring-cloud-common" options="" />
+      <module name="pro14-spring-session-a" options="-parameters" />
+      <module name="pro14-spring-session-b" options="-parameters" />
+      <module name="spring-boot-maven-project" options="-parameters" />
+    </option>
+  </component>
+</project>

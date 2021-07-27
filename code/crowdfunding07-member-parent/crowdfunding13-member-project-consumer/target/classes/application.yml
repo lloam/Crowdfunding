@@ -1,0 +1,26 @@
+server:
+  port: 5000
+spring:
+  application:
+    name: mao-crowd-project
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    # 关闭缓存
+    cache: false
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  # SpringSession 配置
+  session:
+    store-type: redis
+# eureka 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

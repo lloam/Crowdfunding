@@ -1,0 +1,18 @@
+server:
+  port: 7000
+
+# 项目名称
+spring:
+  application:
+    name: mao-feign-server-consumer
+
+# eureka  客户端配置
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:5000/eureka/
+
+# 服务降级
+feign:
+  hystrix:
+    enabled: true

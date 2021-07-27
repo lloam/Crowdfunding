@@ -1,0 +1,16 @@
+server:
+  port: 3000
+
+# redis 配置
+spring:
+  application:
+    name: mao-crowd-redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+# eureka 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/

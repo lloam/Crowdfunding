@@ -1,0 +1,39 @@
+server:
+  port: 4000
+
+# redis 配置
+spring:
+  application:
+    name: mao-crowd-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    # 关闭缓存
+    cache: false
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  # SpringSession 配置
+  session:
+    store-type: redis
+
+# eureka 配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka/
+
+# 发送短信的属性配置
+short:
+  message:
+    host: "https://gyytz.market.alicloudapi.com"
+    path: "/sms/smsSend"
+    method: "post"
+    app-code: "98a7b521b3af411eba4f88635372c856"
+    sms-sign-id: "2e65b1bb3d054466b82f0c9d125465e2"
+    template-id: "908e94ccf08b4476ba6c876d13f084ad"
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
